@@ -1,0 +1,93 @@
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Canais</button>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        
+        <a class="dropdown-item">
+            <div class="dropdown-submenu">Desenhos
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" onclick="changeChannel('disney')">Disney</a>
+                    <a class="dropdown-item" onclick="changeChannel('disneyxd')">Disney XD</a>
+                    <a class="dropdown-item" onclick="changeChannel('nick')">Nickelodeon</a>
+                    <a class="dropdown-item" onclick="changeChannel('cartoon')">Cartoon Network</a>
+                </div>
+            </div>
+        </a>
+
+        <a class="dropdown-item">
+            <div class="dropdown-submenu">Documentários
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" onclick="changeChannel('discovery')">Discovery Channel</a>
+                    <a class="dropdown-item" onclick="changeChannel('discoverysience')">Discovery Science</a>
+                    <a class="dropdown-item" onclick="changeChannel('history')">History Channel</a>
+                </div>
+            </div>
+        </a>
+
+        <a class="dropdown-item">
+            <div class="dropdown-submenu">Filmes
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" onclick="changeChannel('amc')">AMC</a>
+                    <a class="dropdown-item" onclick="changeChannel('warner')">Warner</a>
+                    <a class="dropdown-item" onclick="changeChannel('fox')">Fox</a>
+                    <a class="dropdown-item" onclick="changeChannel('megapix')">Megapix</a>
+                    <a class="dropdown-item" onclick="changeChannel('fx')">FX</a>
+                    <a class="dropdown-item" onclick="changeChannel('cinemax')">Cinemax</a>
+                    <a class="dropdown-item" onclick="changeChannel('tnt')">TNT</a>
+                    <a class="dropdown-item" onclick="changeChannel('space')">Space</a>
+
+                    <a class="dropdown-item">
+                        <div class="dropdown-submenu">Telecine
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" onclick="changeChannel('telecinepipoca')">Pipoca</a>
+                                <a class="dropdown-item" onclick="changeChannel('telecineaction')">Action</a>
+                                <a class="dropdown-item" onclick="changeChannel('telecinecult')">Cult</a>
+                                <a class="dropdown-item" onclick="changeChannel('telecinefun')">Fun</a>
+                                <a class="dropdown-item" onclick="changeChannel('telecinepremium')">Premium</a>
+                                <a class="dropdown-item" onclick="changeChannel('telecinetouch')">Touch</a>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="dropdown-item">
+                        <div class="dropdown-submenu">HBO
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" onclick="changeChannel('hbo')">HBO</a>
+                                <a class="dropdown-item" onclick="changeChannel('hbo2')">HBO 2</a>
+                                <a class="dropdown-item" onclick="changeChannel('hboplus')">HBO Plus</a>
+                                <a class="dropdown-item" onclick="changeChannel('hbofamily')">HBO Family</a>
+                                <a class="dropdown-item" onclick="changeChannel('hbosignature')">HBO Signature</a>
+                                <a class="dropdown-item" onclick="changeChannel('max')">Max</a>
+                                <a class="dropdown-item" onclick="changeChannel('maxprime')">Max Prime</a>
+                                <a class="dropdown-item" onclick="changeChannel('maxup')">Max Up</a>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </a>
+
+        <a class="dropdown-item">
+            <div class="dropdown-submenu">Esportes
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" onclick="changeChannel('foxsports1')">Fox Sports</a>
+                    <a class="dropdown-item" onclick="changeChannel('foxsports2')">Fox Sports 2</a>
+                    <a class="dropdown-item" onclick="changeChannel('combate')">Combate</a>
+                    <a class="dropdown-item" onclick="changeChannel('espn')">ESPN</a>
+                    <a class="dropdown-item" onclick="changeChannel('espn2')">ESPN 2</a>
+                    <a class="dropdown-item" onclick="changeChannel('espnbrasil')">ESPN Brasil</a>
+                    <a class="dropdown-item" onclick="changeChannel('espnextra')">ESPN Extra</a>
+                </div>
+            </div>
+        </a>
+
+
+
+        <div class="dropdown-divider"></div>
+        <div class="dropdown-item">
+            <input type="text" name="chann" placeholder="Canal" onchange="changeChannel(this.value)">
+        </div>
+
+    </div>
+</div>
