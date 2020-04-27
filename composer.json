@@ -1,0 +1,11 @@
+{
+    "name": "schelas/wiltv",
+    "description": "Sort of a TV",
+    "authors": [
+        {
+            "name": "Wiltencir Garcia",
+            "email": "wiltencir@gmail.com"
+        }
+    ],
+    "require": {}
+}
