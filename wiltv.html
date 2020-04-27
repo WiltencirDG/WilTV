@@ -1,0 +1,135 @@
+<html>
+<head data-cast-api-enabled="true">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .dropdown>.dropdown-menu {top: 200%;transition: 0.5s all ease-in-out;}
+        .dropdown:hover>.dropdown-menu {display: block;top: 100%;}
+        .dropdown>.dropdown-toggle:active {pointer-events: none;}
+        .dropdown-submenu{position:relative;}
+        .dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+        .dropdown-submenu:hover>.dropdown-menu{display:block;}
+        .dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:3px;margin-right:-10px;}
+        .dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
+        .dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+    </style>
+</head>
+<body>
+
+    <div class="">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Canais</button>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                
+                <a class="dropdown-item">
+                    <div class="dropdown-submenu">Desenhos
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" onclick="changeChannel('disney')">Disney</a>
+                            <a class="dropdown-item" onclick="changeChannel('disneyxd')">Disney XD</a>
+                            <a class="dropdown-item" onclick="changeChannel('nick')">Nickelodeon</a>
+                            <a class="dropdown-item" onclick="changeChannel('cartoon')">Cartoon Network</a>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="dropdown-item">
+                    <div class="dropdown-submenu">Documentários
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" onclick="changeChannel('discovery')">Discovery Channel</a>
+                            <a class="dropdown-item" onclick="changeChannel('discoverysience')">Discovery Science</a>
+                            <a class="dropdown-item" onclick="changeChannel('history')">History Channel</a>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="dropdown-item">
+                    <div class="dropdown-submenu">Filmes
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" onclick="changeChannel('amc')">AMC</a>
+                            <a class="dropdown-item" onclick="changeChannel('warner')">Warner</a>
+                            <a class="dropdown-item" onclick="changeChannel('fox')">Fox</a>
+                            <a class="dropdown-item" onclick="changeChannel('megapix')">Megapix</a>
+                            <a class="dropdown-item" onclick="changeChannel('fx')">FX</a>
+                            <a class="dropdown-item" onclick="changeChannel('cinemax')">Cinemax</a>
+                            <a class="dropdown-item" onclick="changeChannel('tnt')">TNT</a>
+                            <a class="dropdown-item" onclick="changeChannel('space')">Space</a>
+
+                            <a class="dropdown-item">
+                                <div class="dropdown-submenu">Telecine
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" onclick="changeChannel('telecinepipoca')">Pipoca</a>
+                                        <a class="dropdown-item" onclick="changeChannel('telecineaction')">Action</a>
+                                        <a class="dropdown-item" onclick="changeChannel('telecinecult')">Cult</a>
+                                        <a class="dropdown-item" onclick="changeChannel('telecinefun')">Fun</a>
+                                        <a class="dropdown-item" onclick="changeChannel('telecinepremium')">Premium</a>
+                                        <a class="dropdown-item" onclick="changeChannel('telecinetouch')">Touch</a>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="dropdown-item">
+                                <div class="dropdown-submenu">HBO
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" onclick="changeChannel('hbo')">HBO</a>
+                                        <a class="dropdown-item" onclick="changeChannel('hbo2')">HBO 2</a>
+                                        <a class="dropdown-item" onclick="changeChannel('hboplus')">HBO Plus</a>
+                                        <a class="dropdown-item" onclick="changeChannel('hbofamily')">HBO Family</a>
+                                        <a class="dropdown-item" onclick="changeChannel('hbosignature')">HBO Signature</a>
+                                        <a class="dropdown-item" onclick="changeChannel('max')">Max</a>
+                                        <a class="dropdown-item" onclick="changeChannel('maxprime')">Max Prime</a>
+                                        <a class="dropdown-item" onclick="changeChannel('maxup')">Max Up</a>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a class="dropdown-item">
+                    <div class="dropdown-submenu">Esportes
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" onclick="changeChannel('foxsports1')">Fox Sports</a>
+                            <a class="dropdown-item" onclick="changeChannel('foxsports2')">Fox Sports 2</a>
+                            <a class="dropdown-item" onclick="changeChannel('combate')">Combate</a>
+                            <a class="dropdown-item" onclick="changeChannel('espn')">ESPN</a>
+                            <a class="dropdown-item" onclick="changeChannel('espn2')">ESPN 2</a>
+                            <a class="dropdown-item" onclick="changeChannel('espnbrasil')">ESPN Brasil</a>
+                            <a class="dropdown-item" onclick="changeChannel('espnextra')">ESPN Extra</a>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                    <input type="text" name="chann" placeholder="Canal" onchange="changeChannel(this.value)">
+                </div>
+
+            </div>
+        </div>
+        <div id="channel"></div>
+    </div>
+    
+
+    <script>
+        var url = "https://blog.canaisgratis.org/player3/canaishlb.php?canal="
+        
+        function changeChannel(channel){
+            document.getElementById("channel").innerHTML = "";
+
+            if(channel != null){
+                document.getElementById("channel").innerHTML = "<iframe name=\"Player\" id=\"Player\"src="+url+channel+" frameborder=\"0\" height=\"800\" scrolling=\"no\" width=\"100%\" allowfullscreen=\"\"> </iframe>";
+            }
+        }
+
+        changeChannel('disney');
+        
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
