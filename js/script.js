@@ -9,7 +9,6 @@ function changeChannel(channel){
 
     if(channel != null){
         document.getElementById("channel").innerHTML = "<iframe name=\"Player\" id=\"Player\"src="+url+channel+" frameborder=\"0\" height=\"800\" scrolling=\"no\" width=\"100%\" allowfullscreen=\"\"> </iframe>";
-        $('.dropdown-toggle').dropdown();
     }
 }
 
