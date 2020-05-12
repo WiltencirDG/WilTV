@@ -11,13 +11,10 @@
 <body>
 
     <div class="">
-        <!--<?php include('html/menu.html'); ?>
+        <?php include('html/menu.html'); ?>
         <div id="channel"></div>
 
-        <img src='https://blog.canaisgratis.org/imgs-videos/Canais/multishow.jpg'></img> -->
-
-        <h1>Patrick moh arrombado</h1>
-
+        <img src='https://blog.canaisgratis.org/imgs-videos/Canais/multishow.jpg'></img>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
